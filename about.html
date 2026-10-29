@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        h1 {
+            background-color: gray;
+        }
+
+        /* Three boxes in a row */
+        .box-row {
+            display: flex;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        /* Box styling */
+        .box {
+            position: relative;
+            background-color: lightblue;
+            border: 2px solid blue;
+            padding: 30px;
+            text-align: center;
+            flex: 1;
+        }
+
+        /* NEW badge at top-right */
+        .badge {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: red;
+            color: white;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+        /* Six boxes in a 3-column grid */
+        .box-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .grid-box {
+            background-color: lightyellow;
+            border: 2px solid orange;
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1 style="color: red;">About Me</h1>
+    </div>
+
+    <div class="about-card">
+        <img src="me.jpg" alt="My Picture" class="profile">
+
+        <h2>Muhammad Noor Nawaz</h2>
+
+        <p>
+            My name is Muhammad Noor Nawaz.
+            I am a student of Artificial Intelligence.
+            I am interested in technology and programming.
+        </p>
+    </div>
+
+    <h2>Flex Boxes</h2>
+
+    <div class="box-row">
+        <div class="box">
+            Box 1
+            <span class="badge">NEW</span>
+        </div>
+
+        <div class="box">Box 2</div>
+
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Grid Boxes</h2>
+
+    <div class="box-grid">
+        <div class="grid-box">Box 1</div>
+        <div class="grid-box">Box 2</div>
+        <div class="grid-box">Box 3</div>
+        <div class="grid-box">Box 4</div>
+        <div class="grid-box">Box 5</div>
+        <div class="grid-box">Box 6</div>
+    </div>
+
+</body>
+</html>
